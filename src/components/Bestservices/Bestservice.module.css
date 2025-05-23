@@ -1,0 +1,72 @@
+.bestServiceSection {
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+  
+  .subtitle {
+     color:#737373;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat' sans-serif;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .description {
+     color:#737373;
+ font-size: 14px;
+    margin-bottom: 5rem;
+    font-family: 'Montserrat' sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px
+    
+  }
+  
+  .cardsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 16rem;
+    text-align: center;
+  }
+  
+  .icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cardTitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cardText {
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+  
+  @media (min-width: 768px) {
+    .cardsContainer {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+  

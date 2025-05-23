@@ -1,0 +1,113 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+
+
+
+
+.navLinks a ,
+.auth a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
+
+/* Auth container: login/register + icons side by side on desktop */
+.auth {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
+  flex: 1;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+/* Login/Register */
+.authItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.authItem a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #23A6F0;
+}
+
+
+.authIcons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+@media (min-width: 769px) {
+  .navLinks {
+    margin-left: 100px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+ 
+  .logo {
+    margin-bottom: 20px;
+    align-self: flex-start;
+  }
+
+ 
+  .navLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-left: 0; 
+  }
+
+  .navLinks a {
+    margin: 10px 0;
+  }
+
+  /* Hide login/register on mobile */
+  .authItem {
+    display: none;
+  }
+
+  /* Auth container on mobile: only show icons pinned top-right */
+  .auth {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    justify-content: flex-start;
+    gap: 10px;
+    width: auto;
+  }
+
+  .auth a {
+    color: #252b42;
+  }
+}

@@ -1,0 +1,69 @@
+.hero {
+    position: relative;
+    width: 99vw; /* reduced from 100vw */
+    height: 500px; /* adjust as needed */
+    margin: 0 auto; /* center the hero block */
+    background-image: url('/src/assets/images/utensils.svg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    overflow: hidden;
+  }
+  
+ .content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    padding: 1rem;
+
+    border-radius: 10px;
+  }
+  
+  .subtitle {
+    color: #3b82f6;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+  }
+  
+  .price {
+    color: #16a34a;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta {
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .cta:hover {
+    background-color: #2563eb;
+  }
+  
+  .image {
+    display: none; 
+  }
+  

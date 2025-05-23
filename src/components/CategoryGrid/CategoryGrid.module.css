@@ -1,0 +1,198 @@
+.grid {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+  max-width: 1146px;
+  height: 630px;
+  margin: 40px auto 0;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.card:nth-child(1) {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+}
+
+/* Top-right card overlay */
+.grid > .card:nth-child(2) .overlay {
+  font-size: 12px;
+  padding: 8px 12px;
+  line-height: 1.2;
+}
+
+.grid > .card:nth-child(2) .overlay h3 {
+  font-size: 29px;
+  margin: 4px 0;
+}
+
+.grid > .card:nth-child(2) .overlay .items {
+  font-size: 11px;
+}
+
+
+.right-bottom {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: flex;
+  gap: 15px;
+  height: 100%;
+}
+
+.right-bottom .card {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  padding: 14px 20px;
+  border-radius: 6px;
+  color: #000;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+
+.right-bottom .overlay {
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.right-bottom .overlay h3 {
+  font-size: 20px;
+  margin: 4px 0;
+}
+
+.right-bottom .overlay .items {
+  font-size: 12px;
+  font-weight: bold;
+  color: #2DC071;
+}
+
+.right-bottom .overlay a {
+  font-size: 12px;
+  color: #000;
+  text-decoration: none;
+}
+
+.items {
+  color: #2DC071;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 5px 0;
+  color: #252B42;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-width: 100%;
+    margin: 20px auto;
+    align-items: center;
+  }
+
+  .card {
+    width: 90vw;
+    height: 90vw;
+    margin-bottom: 15px;
+    grid-column: auto !important;
+    grid-row: auto !important;
+    position: relative;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .right-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90vw;
+    order: 3;
+    height: auto;
+    align-items: center;
+  }
+
+  .right-bottom .card {
+    width: 100%;
+    height: 90vw;
+  }
+
+  .grid > .card:nth-child(2) {
+    order: 2;
+  }
+
+  .card:nth-child(1) {
+    order: 1;
+    max-width: 90vw;
+    height: 90vw;
+  }
+
+  .grid > .card:nth-child(1) .overlay,
+  .grid > .card:nth-child(2) .overlay {
+    top: 8px;
+    left: 8px;
+    right: auto;
+    padding: 4px 8px;
+    font-size: 11px;
+    font-weight: 600;
+    background: none !important;
+    
+  }
+
+  .grid > .card:nth-child(1) .overlay h3,
+  .grid > .card:nth-child(2) .overlay h3 {
+    
+     font-size: 20px;
+  margin: 4px 0;
+  }
+
+  .grid > .card:nth-child(1) .overlay .items,
+  .grid > .card:nth-child(2) .overlay .items {
+    font-size: 10px;
+  }
+}
