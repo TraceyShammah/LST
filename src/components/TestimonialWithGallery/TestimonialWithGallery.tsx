@@ -11,18 +11,23 @@ export default function TestimonialWithGallery() {
           alt={testimonial.name}
           className={styles.avatar}
         />
-        <div className={styles.stars}>
-          {[...Array(5)].map((_, i) => {
-            return (
-              <span
-                key={i}
-                className={i < testimonial.rating ? styles.filled : styles.outlined}
-              >
-                ★
-              </span>
-            );
-          })}
-        </div>
+          <div className={styles.stars}>
+  {[...Array(5)].map((_, i) => {
+    if (i < 4) {
+      return (
+        <span key={i} className={styles.filled}>
+          ★
+        </span>
+      );
+    } else {
+      return (
+        <span key={i} className={styles.outlined}>
+          ☆
+        </span>
+      );
+    }
+  })}
+</div>
 
         <p className={styles.quote}>{testimonial.quote}</p>
         <p className={styles.name}>{testimonial.name}</p>
