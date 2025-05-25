@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import styles from './BestsellerGrid.module.css';
 import { useSelector, useDispatch } from 'react-redux';
 import  type { RootState, AppDispatch } from '../../redux/store';
