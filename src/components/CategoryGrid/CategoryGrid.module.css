@@ -22,7 +22,6 @@
   display: block;
 }
 
-
 .card:nth-child(1) {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
@@ -31,7 +30,7 @@
   height: 100%;
 }
 
-/* Top-right card overlay */
+
 .grid > .card:nth-child(2) .overlay {
   font-size: 12px;
   padding: 8px 12px;
@@ -47,7 +46,6 @@
   font-size: 11px;
 }
 
-
 .right-bottom {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
@@ -62,7 +60,6 @@
   width: 100%;
 }
 
-
 .overlay {
   position: absolute;
   top: 15px;
@@ -76,7 +73,6 @@
   font-weight: 700;
   line-height: 1.2;
 }
-
 
 .right-bottom .overlay {
   padding: 10px 14px;
@@ -181,14 +177,12 @@ a {
     font-size: 11px;
     font-weight: 600;
     background: none !important;
-    
   }
 
   .grid > .card:nth-child(1) .overlay h3,
   .grid > .card:nth-child(2) .overlay h3 {
-    
-     font-size: 20px;
-  margin: 4px 0;
+    font-size: 20px;
+    margin: 4px 0;
   }
 
   .grid > .card:nth-child(1) .overlay .items,
@@ -196,3 +190,71 @@ a {
     font-size: 10px;
   }
 }
+
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto;
+    gap: 15px;
+    height: auto;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .card {
+    height: auto;
+  }
+
+  .grid > .card:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .grid > .card:nth-child(2) {
+    height: auto;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .right-bottom {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    height: auto;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .right-bottom .card {
+    flex: 1 1 calc(50% - 8px);
+    aspect-ratio: 16 / 9;
+    max-width: 100%;
+  }
+
+  .overlay {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .overlay h3 {
+    font-size: 22px;
+    margin: 4px 0;
+  }
+
+  .overlay .items {
+    font-size: 12px;
+  }
+}
+

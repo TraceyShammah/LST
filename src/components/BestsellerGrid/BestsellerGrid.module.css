@@ -136,3 +136,48 @@
     padding: 10px 5px;
   }
 }
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image {
+    height: 280px;
+    object-fit: cover;
+  }
+
+  .info {
+    padding: 12px 8px;
+  }
+
+  .heading {
+    font-size: 26px;
+  }
+
+  .subheading {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+
+  .oldPrice,
+  .newPrice {
+    font-size: 15px;
+  }
+
+  .loadMore {
+    font-size: 13px;
+    padding: 10px 24px;
+  }
+}

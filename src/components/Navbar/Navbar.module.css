@@ -13,11 +13,7 @@
   font-size: 24px;
 }
 
-
-
-
-
-.navLinks a ,
+.navLinks a,
 .auth a {
   margin: 0 10px;
   text-decoration: none;
@@ -25,7 +21,6 @@
   font-weight: 500;
 }
 
-/* Auth container: login/register + icons side by side on desktop */
 .auth {
   display: flex;
   align-items: center;
@@ -36,7 +31,6 @@
   padding-left: 20px;
 }
 
-/* Login/Register */
 .authItem {
   display: flex;
   align-items: center;
@@ -51,21 +45,54 @@
   color: #23A6F0;
 }
 
-
 .authIcons {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-
+/* Desktop spacing */
 @media (min-width: 769px) {
   .navLinks {
     margin-left: 100px;
   }
 }
 
+/* Tablet layout: 769px - 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 25px;
+  }
 
+  .logo {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .navLinks {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    gap: 15px;
+  }
+
+  .auth {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .authItem {
+    display: flex;
+  }
+}
+
+/* Mobile layout */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -73,31 +100,27 @@
     padding: 15px;
   }
 
- 
   .logo {
     margin-bottom: 20px;
     align-self: flex-start;
   }
 
- 
   .navLinks {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-left: 0; 
+    margin-left: 0;
   }
 
   .navLinks a {
     margin: 10px 0;
   }
 
-  /* Hide login/register on mobile */
   .authItem {
     display: none;
   }
 
-  /* Auth container on mobile: only show icons pinned top-right */
   .auth {
     position: absolute;
     top: 15px;
