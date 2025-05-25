@@ -21,6 +21,17 @@ import post2 from "../assets/images/post2.svg";
 import post3 from "../assets/images/post3.svg";
 import avatar from "../assets/images/avatar.svg";
 import utensils from "../assets/images/utensils.svg";
+ import photo1 from "../assets/images/photo1.svg";
+  import photo2 from "../assets/images/photo2.svg";
+ import photo3 from "../assets/images/photo3.svg";
+ import photo4 from "../assets/images/photo4.svg";
+ import photo5 from "../assets/images/photo5.svg";
+ import photo6 from "../assets/images/photo6.svg";
+ import photo7 from "../assets/images/photo7.svg";
+ import photo8 from "../assets/images/photo8.svg";
+ import photo9 from "../assets/images/photo9.svg";
+ 
+
 
 // Categories
 export const categories = [
@@ -82,7 +93,7 @@ export const featuredPosts = [
   },
 ];
 
-// Testimonial
+
 export const testimonial = {
   image: avatar,
   name: "Regina Miles",
@@ -91,19 +102,19 @@ export const testimonial = {
   quote: "Late help you see how many days you need to work to reach your financial goal",
 };
 
-// Testimonial Gallery
-export const testimonialGallery = [
-  '/src/assets/images/photo1.svg',
-  '/src/assets/images/photo2.svg',
-  '/src/assets/images/photo3.svg',
-  '/src/assets/images/photo4.svg',
-  '/src/assets/images/photo5.svg',
-  '/src/assets/images/photo6.svg',
-  '/src/assets/images/photo7.svg',
-  '/src/assets/images/photo8.svg',
-  '/src/assets/images/photo9.svg',
 
+export const testimonialGallery = [
+  photo1,
+  photo2,
+  photo3,
+  photo4,
+  photo5,
+  photo6,
+  photo7,
+  photo8,
+  photo9,
 ];
+
 export const heroSectionContent = {
   subtitle: "Designing Better Experience",
   title: "Problems trying to resolve the conflict between",
