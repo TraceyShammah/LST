@@ -1,54 +1,55 @@
-# React + TypeScript + Vite
+E-Commerce Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive e-commerce web application built with React + TypeScript, showcasing a product catalog, shopping cart functionality, and dynamic API integration using Redux Toolkit Query. The app adapts seamlessly across desktop, tablet, and mobile devices, following a modern and user-friendly design.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features
 
-## Expanding the ESLint configuration
+General:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Responsive layout (desktop, tablet, mobile)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Mobile-first, clean, and accessible UI
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Consistent design based on Figma specifications
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Product Browsing:
+
+Dynamic product grid with images, titles, categories, and prices
+
+Paginated "Load More" functionality using DummyJSON API
+
+Detailed product cards with promotional overlays
+
+Sectioned product display (e.g., Featured, Bestsellers)
+
+
+Navigation:
+
+Mobile-optimized hamburger menu or stacked layout
+
+Conditional display of login/register buttons on desktop only
+
+
+API Integration:
+
+Fetch products from DummyJSON
+
+Support for pagination via skip and limit
+
+Product detail views available via dynamic routes
+
+
+
+Tech Stack:
+
+Frontend Framework: React + TypeScript (Vite)
+
+State Management: Redux Toolkit & Redux Toolkit Query
+
+Styling: CSS Modules
+
+Routing: React Router DOM
+
+Deployment: Netlify

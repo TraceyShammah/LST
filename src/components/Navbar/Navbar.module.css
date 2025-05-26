@@ -126,7 +126,7 @@
     flex-direction: column;
     align-items: center;
     padding: 15px;
-    position: relative;
+    position: relative; /* NOT sticky on mobile */
   }
 
   .logo {
