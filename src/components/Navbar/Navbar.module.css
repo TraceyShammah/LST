@@ -75,13 +75,18 @@
   gap: 15px;
 }
 
-
 @media (min-width: 769px) {
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+  }
+
   .navLinks {
     margin-left: 100px;
   }
 }
-
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .navbar {
@@ -116,12 +121,12 @@
   }
 }
 
-
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: center;
     padding: 15px;
+    position: relative;
   }
 
   .logo {
@@ -158,14 +163,13 @@
     color: #252b42;
   }
 
- 
   .shopLink {
     display: inline-flex;
     align-items: center;
     gap: 0;
-     margin-left: 16px;
-     margin-top: 10px;
-     margin-bottom: 10px;
+    margin-left: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .shopLink a {
